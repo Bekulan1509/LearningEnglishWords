@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearningEnglishWords</string>
+    <string name="fab_content_desc">addFab</string>
+</resources>
