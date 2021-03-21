@@ -7,8 +7,8 @@
 
     <com.wajahatkarim3.easyflipview.EasyFlipView
         android:id="@+id/myEasyFlipView"
-        android:layout_width="400dp"
-        android:layout_height="260dp"
+        android:layout_width="355dp"
+        android:layout_height="235dp"
         app:autoFlipBack="true"
         app:autoFlipBackTime="1000"
         app:flipDuration="400"

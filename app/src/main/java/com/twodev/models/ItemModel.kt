@@ -3,9 +3,10 @@ package com.twodev.models
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "themes")
-data class ItemMainModel(
+@Entity(tableName = "words")
+data class ItemModel(
     @PrimaryKey(autoGenerate = true)
     var id:Int? = null,
-    var theme: String? = null
+    var word1: String? = null,
+    var word2: String? = null
 )

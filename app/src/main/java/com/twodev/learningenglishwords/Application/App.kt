@@ -1,7 +1,6 @@
 package com.twodev.learningenglishwords.Application
 
 import android.app.Application
-import androidx.lifecycle.ViewModel
 import com.twodev.learningenglishwords.di.dbModule
 import com.twodev.learningenglishwords.di.repositoryModule
 import com.twodev.learningenglishwords.di.viewModuleModule
@@ -19,7 +18,7 @@ class App : Application() {
             androidContext(this@App)
             modules(
                 listOf(
-                    viewModuleModule,dbModule,repositoryModule,
+                    viewModuleModule, dbModule, repositoryModule,
                 )
             )
         }

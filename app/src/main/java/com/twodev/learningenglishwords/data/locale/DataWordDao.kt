@@ -1,16 +1,15 @@
 package com.twodev.learningenglishwords.data.locale
 
-import android.content.ClipData
 import androidx.room.*
-import com.twodev.models.ItemMainModel
+import com.twodev.models.ItemModel
 @Dao
 interface DataWordDao {
     @Query("SELECT*FROM words")
-     fun getItemWords(): MutableList<ItemMainModel?>
+     fun getItemWords(): MutableList<ItemModel?>
 
      @Delete
-     fun deleteItem(item:ItemMainModel)
+     fun deleteItem(item:ItemModel)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-     fun insertItemWords(items: ItemMainModel)
+     fun insertItemWords(items: ItemModel)
 }
